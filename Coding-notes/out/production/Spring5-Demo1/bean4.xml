@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="student" class="com.spring.Student">
+        <!--数组类型属性注入-->
+        <property name="course">
+            <array>
+                <value>Java</value>
+                <value>Python</value>
+            </array>
+        </property>
+        <!--List类型属性注入-->
+        <property name="list">
+            <list>
+                <value>小江</value>
+                <value>嘎嘎</value>
+            </list>
+        </property>
+        <!--map类型属性注入-->
+        <property name="map">
+            <map>
+                <entry key="xiaojiang" value="zhang"></entry>
+                <entry key="Luccy" value="li"></entry>
+            </map>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>a</value>
+                <value>b</value>
+                <value>c</value>
+                <value>d</value>
+            </set>
+        </property>
+    </bean>
+    <!--添加后置处理器-->
+    <bean id="myBeanPost" class="com.spring.MyBeanPost"/>
+
+</beans>

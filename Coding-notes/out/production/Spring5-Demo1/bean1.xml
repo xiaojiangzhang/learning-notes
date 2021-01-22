@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--创建user对象    -->
+    <bean id="user" class="com.xiaojiang.User"/>
+    <!--使用 property 完成属性注入 name：类里面属性名称 value：向属性注入的值 -->
+    <bean id="book" class="com.xiaojiang.Book">
+        <property name="name" value="xiaojiang"/>
+        <property name="author" value="jiang"/>
+    </bean>
+    <!--使用有参构造方法注入属性值-->
+    <bean id="order" class="com.xiaojiang.Order" >
+        <constructor-arg name="oname" value="xiaojiangzhang"/>
+        <constructor-arg name="oaddress" value="china"/>
+    </bean>
+    <bean id="student" class="com.xiaojiang.Students" p:username="xiaojiang" p:password="pppp">
+    </bean>
+
+</beans>

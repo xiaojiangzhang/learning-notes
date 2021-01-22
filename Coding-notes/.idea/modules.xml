@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Coding-notes.iml" filepath="$PROJECT_DIR$/Coding-notes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring5-Demo1/Spring5-Demo1.iml" filepath="$PROJECT_DIR$/Spring5-Demo1/Spring5-Demo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread-model/Thread-model.iml" filepath="$PROJECT_DIR$/Thread-model/Thread-model.iml" />
+    </modules>
+  </component>
+</project>
